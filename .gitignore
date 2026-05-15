@@ -1,0 +1,13 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/*.tfvars
+
+# Node
+app/node_modules/
+app/.env
+
+# Mac
+.DS_Store
