@@ -15,10 +15,10 @@ const pool = new Pool({
       rejectUnauthorized: false
     }
   });
-  
+
 // Health check — ALB will use this to verify the container is alive
 app.get('/health', (req, res) => {
-  res.json({ status: 'healthy' });
+  res.json({ status: 'healthy', version: '2.0' });
 });
 
 // Get all jobs
